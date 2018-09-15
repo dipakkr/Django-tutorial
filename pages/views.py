@@ -11,7 +11,13 @@ def contact_view(request, *args, **kargs):
     return render( request, "contact.html", {} )
 
 def about_view(request, *args, **kargs):
-    return render( request, "about.html", {} )
+
+    my_context = {
+        "name" : "deepak",
+        "number" : 1234, 
+        "list" : [1, 2, 3, 4]
+    }
+    return render( request, "about.html", my_context )
 
 def api(*args, **kargs):
     return JsonResponse({'status':"OK", 'response_code' : "200"})
