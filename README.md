@@ -15,8 +15,8 @@ Reources - https://www.youtube.com/watch?v=sxSZijwU_Kg&list=PLEsfXFp6DpzTD1BD1aW
 *Time devoted - 3hrs*
 
 - Making new apps in django
-- Usage of makemigrations and migrate
+- Usage of **makemigrations** and **migrate**
 - Routing and serving new files using django
-
-
+- Return JSON response 
+- templating engine 
 ----------------------------------------
