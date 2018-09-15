@@ -10,4 +10,12 @@
     {{name}}, {{number}}, {{list}}
 </p> 
 
+
+<!-- Iterating in template  -->
+<ul>
+    {% for list_item in list %}
+       <li>{{list_item}}</li>
+    {% endfor %}
+</ul>
+
 {% endblock %}
