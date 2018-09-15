@@ -7,11 +7,11 @@ def home_view(request, *args, **kargs):
     print(request.user)
     return render( request, "home.html", {} )
 
-def contact_view(*args, **kargs):
-    return HttpResponse("<h1> This is Contact view page</h1>")
+def contact_view(request, *args, **kargs):
+    return render( request, "contact.html", {} )
 
-def about_view(*args, **kargs):
-    return HttpResponse("<h1> This is About view page</h1>")
+def about_view(request, *args, **kargs):
+    return render( request, "about.html", {} )
 
 def api(*args, **kargs):
     return JsonResponse({'status':"OK", 'response_code' : "200"})
