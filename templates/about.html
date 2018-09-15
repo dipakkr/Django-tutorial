@@ -2,14 +2,14 @@
 
 {% include 'navbar.html' %}
 
+<!-- <p>{{title|capfirst}}</p>  TODO:why it is not working here-->
+
 {% block content %}
 <h1>About Us</h1>
-<p>This is template</p>
+<p> {{name}}, {{number}}, {{list}} </p> 
 
-<p>
-    {{name}}, {{number}}, {{list}}
-</p> 
 
+<p>{{title|capfirst}}</p>
 
 <!-- Iterating in template  -->
 <ul>

@@ -13,6 +13,7 @@ def contact_view(request, *args, **kargs):
 def about_view(request, *args, **kargs):
 
     my_context = {
+        "title" : "this is title",
         "name" : "deepak",
         "number" : 1234, 
         "list" : [1, 2, 3, 4]

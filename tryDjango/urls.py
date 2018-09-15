@@ -18,8 +18,11 @@ from django.urls import path
 
 from pages.views import home_view, contact_view, about_view, api
 
+from products.views import product_detail_view
+
 urlpatterns = [
     
+    path('product/', product_detail_view ),
     path('api/', api, name="Api"),
     path('contact/', contact_view, name="Contact"),
     path('about/', about_view, name="About"),
