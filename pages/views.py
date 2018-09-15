@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 def home_view(request, *args, **kargs):
@@ -12,3 +12,6 @@ def contact_view(*args, **kargs):
 
 def about_view(*args, **kargs):
     return HttpResponse("<h1> This is About view page</h1>")
+
+def api(*args, **kargs):
+    return JsonResponse({'status':"OK", 'response_code' : "200"})
