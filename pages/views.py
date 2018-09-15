@@ -5,7 +5,7 @@ from django.http import HttpResponse, JsonResponse
 def home_view(request, *args, **kargs):
     print(args, kargs)
     print(request.user)
-    return HttpResponse("<h1> This is home view page</h1>")
+    return render( request, "home.html", {} )
 
 def contact_view(*args, **kargs):
     return HttpResponse("<h1> This is Contact view page</h1>")
