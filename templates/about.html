@@ -18,4 +18,17 @@
     {% endfor %}
 </ul>
 
+<!-- Using conditions in template  -->
+<ul>
+        {% for x in list %}
+           {% if x == 2 %}
+              <li> {{forloop.counter}} - {{x|add:22}} </li>          
+            {% elif x == 3 %}
+            <li>{{ forloop.counter }} - {{x|add:10}} </li>
+            {% else %}
+            <li>{{ forloop.counter }} - {{x}} </li>
+            {% endif %}
+        {% endfor %}
+</ul>
+
 {% endblock %}
