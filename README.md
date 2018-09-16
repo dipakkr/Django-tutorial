@@ -12,7 +12,7 @@
 
 Reources - https://www.youtube.com/watch?v=sxSZijwU_Kg&list=PLEsfXFp6DpzTD1BD1aWNxS2Ep06vIkaeW&index=9
 
-*Time devoted - 3hrs*
+*Time devoted - 4hrs*
 
 - Making new apps in django
 - Usage of **makemigrations** and **migrate**
@@ -20,3 +20,13 @@ Reources - https://www.youtube.com/watch?v=sxSZijwU_Kg&list=PLEsfXFp6DpzTD1BD1aW
 - Return JSON response 
 - templating engine 
 ----------------------------------------
+
+## Day 2 [ 16th Sept ] 
+
+Reources - https://www.youtube.com/watch?v=sxSZijwU_Kg&list=PLEsfXFp6DpzTD1BD1aWNxS2Ep06vIkaeW&index=9
+
+*Time devoted - 3hrs*
+
+- Dynamic URL Routing
+- Database model create, update, delete
+- Made a blog app in django
