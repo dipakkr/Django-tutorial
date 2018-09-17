@@ -18,10 +18,8 @@ from django.urls import path, include
 
 from pages.views import home_view, contact_view, about_view, api
 
-from products.views import product_detail_view, product_create_view, product_list_view
-
 urlpatterns = [
-    
+    path('blog/', include('blog.urls')),
     path('product/', include('products.urls')),
     path('api/', api, name="Api"),
     path('contact/', contact_view, name="Contact"),

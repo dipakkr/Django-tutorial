@@ -10,15 +10,13 @@ def product_create_view(request):
     if form.is_valid():
         form.save()
         form = ProductForm()
-
     context = {
         'form' : form
     }
-
     return render(request, "product/product_create.html", context)
 
-def product_detail_view(request, id):
-    obj = get_object_or_404(Product, id=id)
+def product_detail_view(request, _id):
+    obj = get_object_or_404(Product, id=_id)
     context = {
         "title" : obj.title,
         "description" : obj.description,
